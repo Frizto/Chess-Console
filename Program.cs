@@ -1,5 +1,5 @@
 ﻿using System;
-using Tabletop;
+using tabletop;
 
 namespace Chess_Console
 {
@@ -7,11 +7,9 @@ namespace Chess_Console
     {
         static void Main(string[] args)
         {
-            Position P;
+            Tabletop tab = new Tabletop(8, 8);
 
-            P = new Position(3, 4);
-
-            Console.WriteLine("Position: " + P);
+            Console.ReadLine();
         }
     }
 }
