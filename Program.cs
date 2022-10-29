@@ -9,6 +9,8 @@ namespace Chess_Console
         {
             Tabletop tab = new Tabletop(8, 8);
 
+            Screen.printTabletop(tab);
+
             Console.ReadLine();
         }
     }

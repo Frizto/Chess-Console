@@ -1,6 +1,6 @@
 ﻿
 
-namespace Tabletop
+namespace tabletop
 {
     class Piece
     {

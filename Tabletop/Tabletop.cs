@@ -1,6 +1,6 @@
 ﻿
 
-namespace Tabletop
+namespace tabletop
 {
     class Tabletop
     {
@@ -14,6 +14,11 @@ namespace Tabletop
             this.colunas = colunas;
 
             pieces = new Piece[linhas, colunas];
+        }
+
+        public Piece piece(int linha, int coluna)
+        {
+            return pieces[linha, coluna];
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿
 
-namespace Tabletop
+namespace tabletop
 {
     enum Color
     {
