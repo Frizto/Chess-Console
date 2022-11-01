@@ -20,5 +20,11 @@ namespace tabletop
         {
             return pieces[linha, coluna];
         }
+
+        public void setPiece(Piece p, Position pos)
+        {
+            pieces[pos.linha, pos.coluna] = p;
+            p.pos = pos;
+        }
     }
 }
