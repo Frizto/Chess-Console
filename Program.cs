@@ -7,13 +7,21 @@ namespace Chess_Console
     {
         static void Main(string[] args)
         {
-            Tabletop tab = new Tabletop(8, 8);
+            try
+            {
 
-            tab.setPiece(new Tower(tab, Color.Black), new Position(0, 0));
-            tab.setPiece(new Tower(tab, Color.Black), new Position(1, 3));
-            tab.setPiece(new King(tab, Color.Black), new Position(2, 4));
+                Tabletop tab = new Tabletop(8, 8);
 
-            Screen.printTabletop(tab);
+                tab.setPiece(new Tower(tab, Color.Black), new Position(0, 0));
+                tab.setPiece(new Tower(tab, Color.Black), new Position(1, 3));
+                tab.setPiece(new King(tab, Color.Black), new Position(0, 2));
+
+                Screen.printTabletop(tab);
+            }
+            catch (TabletopException e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
             Console.ReadLine();
         }
